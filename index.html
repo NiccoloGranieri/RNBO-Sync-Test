@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cdn.cycling74.com/rnbo/latest/rnbo.min.js"></script>
+  <script src="app.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <header><h1>RNBO Sync Test</h1></header>
+
+  <main>
+
+    <video id="webcam-video" autoplay></video>
+
+    <br>
+
+    <button id="start-button">Start Audio</button>
+
+    <label for="vol-slider">Master Volume (0-100%)</label>
+    <input type="range" id="vol-slider" min="0" max="127" value="100">    
+
+    <label for="osc1">Chorus (Bypass-On)</label>
+    <input type="range" id="osc1" min="1" max="2" value="1">
+
+    <label for="osc2">FX2 (Bypass-On)</label>
+    <input type="range" id="osc2" min="1" max="2" value="1">
+
+    <label for="osc3">FX3 (Bypass-On)</label>
+    <input type="range" id="osc3" min="1" max="2" value="1">
+
+    <label for="osc4">FX4 (Bypass-On)</label>
+    <input type="range" id="osc4" min="1" max="2" value="1">
+
+    <label for="osc5">FX5 (Bypass-On)</label>
+    <input type="range" id="osc5" min="1" max="2" value="1">    
+
+  </main>
+
+</body>
+</html>
