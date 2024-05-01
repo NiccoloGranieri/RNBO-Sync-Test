@@ -51,24 +51,72 @@ const setup = async () => {
     device.parametersById.get("master-volume").value = e.target.value;
   };
 
-  document.getElementById("osc1").oninput = (e) => {
+  document.getElementById("osc1-on").oninput = (e) => {
     device.parametersById.get("g1").value = e.target.value;
   };
 
-  document.getElementById("osc2").oninput = (e) => {
+  document.getElementById("osc1-off").oninput = (e) => {
+    device.parametersById.get("g1").value = e.target.value;
+  };
+
+  document.getElementById("osc2-on").oninput = (e) => {
     device.parametersById.get("g2").value = e.target.value;
   };
 
-  document.getElementById("osc3").oninput = (e) => {
+  document.getElementById("osc2-off").oninput = (e) => {
+    device.parametersById.get("g2").value = e.target.value;
+  };
+
+  document.getElementById("osc2param").oninput = (e) => {
+    device.parametersById.get("FX2/RNBO-PShifter/transp").value = e.target.value;
+  };
+
+  document.getElementById("osc3-on").oninput = (e) => {
     device.parametersById.get("g3").value = e.target.value;
   };
 
-  document.getElementById("osc4").oninput = (e) => {
+  document.getElementById("osc3-off").oninput = (e) => {
+    device.parametersById.get("g3").value = e.target.value;
+  };
+
+  document.getElementById("osc4-on").oninput = (e) => {
     device.parametersById.get("g4").value = e.target.value;
   };
 
-  document.getElementById("osc5").oninput = (e) => {
+  document.getElementById("osc4-off").oninput = (e) => {
+    device.parametersById.get("g4").value = e.target.value;
+  };
+
+  document.getElementById("osc4-param-on").oninput = (e) => {
+    device.parametersById.get("FX4/RNBO-Freezer/freeze").value = e.target.value;
+  };
+
+  document.getElementById("osc4-param-off").oninput = (e) => {
+    device.parametersById.get("FX4/RNBO-Freezer/freeze").value = e.target.value;
+  };
+
+  document.getElementById("osc5-on").oninput = (e) => {
     device.parametersById.get("g5").value = e.target.value;
+  };
+
+  document.getElementById("osc5-off").oninput = (e) => {
+    device.parametersById.get("g5").value = e.target.value;
+  };
+
+  document.getElementById("low").oninput = (e) => {
+    device.parametersById.get("FX5/RNBO-EQ/low").value = e.target.value;
+  };
+
+  document.getElementById("mid").oninput = (e) => {
+    device.parametersById.get("FX5/RNBO-EQ/mid").value = e.target.value;
+  };
+
+  document.getElementById("high").oninput = (e) => {
+    device.parametersById.get("FX5/RNBO-EQ/high").value = e.target.value;
+  };
+
+  document.getElementById("volume").oninput = (e) => {
+    device.parametersById.get("FX5/RNBO-EQ/level").value = e.target.value;
   };
   
 };

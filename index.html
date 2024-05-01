@@ -15,7 +15,7 @@
 
   <main>
 
-    <video id="webcam-video" autoplay></video>
+    <video id="webcam-video" autoplay style="width: 100%; max-width: 640px;"></video>
 
     <br>
 
@@ -24,20 +24,55 @@
     <label for="vol-slider">Master Volume (0-100%)</label>
     <input type="range" id="vol-slider" min="0" max="127" value="100">    
 
-    <label for="osc1">Chorus (Bypass-On)</label>
-    <input type="range" id="osc1" min="1" max="2" value="1">
+    <br>
 
-    <label for="osc2">FX2 (Bypass-On)</label>
-    <input type="range" id="osc2" min="1" max="2" value="1">
+    <label for="osc1">Chorus</label>
+    <input type="radio" id="osc1-on" name="osc1" value="1" checked> Bypass
+    <input type="radio" id="osc1-off" name="osc1" value="2"> On
 
-    <label for="osc3">FX3 (Bypass-On)</label>
-    <input type="range" id="osc3" min="1" max="2" value="1">
+    <br>
 
-    <label for="osc4">FX4 (Bypass-On)</label>
-    <input type="range" id="osc4" min="1" max="2" value="1">
+    <label for="osc2">Pitch Shifter</label>
+    <input type="radio" id="osc2-on" name="osc2" value="1" checked> Bypass
+    <input type="radio" id="osc2-off" name="osc2" value="2"> On
 
-    <label for="osc5">FX5 (Bypass-On)</label>
-    <input type="range" id="osc5" min="1" max="2" value="1">    
+    <label for="osc2param">Pitch Shifter (-12 / 12)</label>
+    <input type="range" id="osc2param" min="-12" max="12" value="0">
+
+    <br>
+
+    <label for="osc3">Riverbero</label>
+    <input type="radio" id="osc3-on" name="osc3" value="1" checked> Bypass
+    <input type="radio" id="osc3-off" name="osc3" value="2"> On
+
+    <br>
+
+    <label for="osc4">Freeze</label>
+    <input type="radio" id="osc4-on" name="osc4" value="1" checked> Bypass
+    <input type="radio" id="osc4-off" name="osc4" value="2"> On
+
+    <input type="radio" id="osc4-param-on" name="osc4-param" value="0"> Stop Freeze
+    <input type="radio" id="osc4-param-off" name="osc4-param" value="1" checked> Freeze
+
+    <br>
+
+    <label for="osc5">Equalizzatore</label>
+    <input type="radio" id="osc5-on" name="osc5" value="1" checked> Bypass
+    <input type="radio" id="osc5-off" name="osc5" value="2"> On
+
+    <br>
+
+    <label for="low">Bassi</label>
+    <input type="range" id="low" min="-100" max="100" value="0">
+    <br>
+    <label for="mid">Medi</label>
+    <input type="range" id="mid" min="-100" max="100" value="0">
+    <br>
+    <label for="high">Alti</label>
+    <input type="range" id="high" min="-100" max="100" value="0">
+    <br>
+    <label for="volume">Volume</label>      
+    <input type="range" id="volume" min="-100" max="100" value="0">        
 
   </main>
 
