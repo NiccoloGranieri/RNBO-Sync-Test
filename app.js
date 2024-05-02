@@ -51,6 +51,22 @@ const setup = async () => {
     device.parametersById.get("master-volume").value = e.target.value;
   };
 
+  document.getElementById("activate-on").oninput = (e) => {
+    if (e.target.checked) {
+      // When activated, disconnect the bypass and connect to the RNBO device
+      source.disconnect(context.destination);
+      source.connect(device.node);
+    }
+  };
+  
+  document.getElementById("activate-off").oninput = (e) => {
+    if (e.target.checked) {
+      // When deactivated, disconnect the RNBO device and connect the bypass
+      source.disconnect(device.node);
+      source.connect(context.destination);
+    }
+  };
+
   document.getElementById("osc1-on").oninput = (e) => {
     device.parametersById.get("g1").value = e.target.value;
   };
